@@ -1,0 +1,8 @@
+{
+  "name": "tender-check",
+  "version": "0.5.0",
+  "private": true,
+  "type": "module",
+  "description": "Tender Check AI – deterministička kontrola dokumentacije o nabavi",
+  "scripts": { "test": "node --test check.test.mjs", "check": "node cli.mjs" }
+}

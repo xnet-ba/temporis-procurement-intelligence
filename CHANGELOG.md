@@ -2,6 +2,13 @@
 
 Format: Keep a Changelog. Datumi u UTC.
 
+## [0.6.0] – 2026-11-11
+### Dodano (FAZA 5 – Tender Check AI, prvi poslovni alat)
+- `apps/tender-check/`: `check.mjs` (10 stavki, diskriminatorni signali, FTS reference), `cli.mjs`, 3 ogledna DON-a, `check.test.mjs` (4 eval testa)
+- Popravljen bug: ekstrakcija vrijednosti uzima zadnju regex grupu
+### Zatvoreno
+- Issue #8 (Faza 5)
+
 ## [0.5.0] – 2026-11-11
 ### Dodano (FAZA 4 – Knowledge, MCP na FTS5)
 - `knowledge/db.mjs`: SQLite + FTS5 (`node:sqlite`, nula novih zavisnosti), verzioniranje (`zamijenjenSa`, datumi važenja)

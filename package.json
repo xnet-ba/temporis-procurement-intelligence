@@ -5,7 +5,7 @@
   "type": "module",
   "description": "Temporis Procurement Intelligence – modularni AI ekosistem za javnu nabavu u RH",
   "scripts": {
-    "test": "node --test tests/*.test.mjs mcp/*.test.mjs knowledge/*.test.mjs"
+    "test": "node --test tests/*.test.mjs mcp/*.test.mjs knowledge/*.test.mjs apps/*/*.test.mjs"
   },
   "engines": {
     "node": ">=20"

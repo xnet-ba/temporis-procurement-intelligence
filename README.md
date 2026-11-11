@@ -6,7 +6,7 @@
 
 *Vještine · MCP server · Aplikacije · Znanje s citatima*
 
-[![Faza](https://img.shields.io/badge/faza-4%20Knowledge-green?style=for-the-badge)](./ROADMAP.md)
+[![Faza](https://img.shields.io/badge/faza-5%20Tender%20Check-green?style=for-the-badge)](./ROADMAP.md)
 [![Licenca](https://img.shields.io/badge/licenca-MIT%20free-green?style=for-the-badge](./LICENSE))
 [![Skillovi](https://img.shields.io/badge/skillova-16-orange?style=for-the-badge)](#-tpi-agent-skills--16-modula)
 [![Aplikacije](https://img.shields.io/badge/aplikacija-6-purple?style=for-the-badge)](#-tpi-apps--6-poslovnih-alata)
@@ -14,7 +14,7 @@
 [![Smoke test](https://img.shields.io/badge/smoke%20test-OK-brightgreen?style=for-the-badge)](./tests/smoke.test.mjs)
 
 **Nosilac:** Temporis savjetovanje d.o.o. · **Stručna osnova:** Bilten javne nabave (BJN) — korištenje uz dozvolu ✅
-> Status: FAZE 2–4 završene – MCP na FTS5 znanju, 16 skillova. Sljedeće: Faza 5 (Tender Check AI, issue #8) ili Faza 6 aplikacije.
+> Status: FAZE 2–5 završene – Tender Check AI radi nad FTS znanjem. Sljedeće: Faza 6 (Workspace, Radar, DKOM Analyzer, Contract Watch, Academy).
 
 [🚀 Brzi start](#-brzi-start) · [📖 Dokumentacija](#-dokumentacija) · [🗺️ Roadmap](./ROADMAP.md) · [📊 Status](./PROJECT_STATUS.md) · [⚖️ Pravna osnova](./docs/legal-and-data-rights.md)
 
@@ -158,7 +158,7 @@ Prva verzija je **read-only** — nijedan alat ne mijenja podatke.
 
 | Aplikacija | Faza ciklusa nabave | Status |
 |---|---|---|
-| 🔍 **Tender Check AI** | Pregled dokumentacije prije objave/ponude | 📋 Faza 5 |
+| 🔍 **Tender Check AI** | Pregled dokumentacije prije objave/ponude | ✅ gotov (v0.6.0) |
 | 🗂️ **Nabava Workspace** | Projekti · dokumenti · evaluacija · ugovori · aneksi | 📋 Faza 6 |
 | 📡 **Tender Radar** | CPV · predmet · lokacija · vrijednost · rokovi · obavijesti | 📋 Faza 6 |
 | ⚖️ **DKOM Analyzer** | Obrasci iz prakse + poređenje s propisima i sudskom praksom | 📋 Faza 6 |

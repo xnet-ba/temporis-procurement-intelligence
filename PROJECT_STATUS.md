@@ -1,7 +1,7 @@
 # PROJECT_STATUS
 
 - Datum posljednje provjere: 2026-11-11
-- Trenutna faza: FAZE 2–4 završene – sljedeće: Faza 5 (Tender Check AI, issue #8)
+- Trenutna faza: FAZE 2–5 završene – sljedeće: Faza 6 (napredni proizvodi)
 - Posljednji commit: dbe7dbf (faza0 struktura) + push na main
 
 ## Završeno

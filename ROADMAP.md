@@ -30,9 +30,10 @@
 - [x] Citatni testovi: važeći/historijski, prazan rezultat = odbijanje, svaki zapis ima izvor+važenje+pouzdanost.
 - Kriterij: test razlikuje važeći/historijski propis, odbija odgovor bez izvora. ✅
 
-## FAZA 5 – Tender Check AI
-- Analiza tenderske dokumentacije (lokalni dokumenti koje korisnik učita).
-- Kriterij: evaluacija tačnosti na oglednim dokumentima.
+## FAZA 5 – TENDER CHECK AI (ZAVRŠENA 2026-11-11)
+- [x] `apps/tender-check`: ekstrakcija 10 elemenata, diskriminatorni signali, izvještaj s referencama iz FTS znanja.
+- [x] Eval na 3 ogledna DON-a (uredan / bez roka / diskriminatorni) – očekivani nalazi.
+- Kriterij: evaluacija tačnosti na oglednim dokumentima. ✅
 
 ## FAZA 6 – Napredni proizvodi
 - Workspace, Radar, DKOM Analyzer, Contract Watch, Academy.
