@@ -1,6 +1,6 @@
 # TPI ROADMAP
 
-## FAZA 0 – Discovery i projektna postavka (AKTIVNA)
+## FAZA 0 – Discovery i projektna postavka (ZAVRŠENA 2026-11-11)
 - [x] Provjera okruženja, Git, GitHub CLI, pristup xnet-ba
 - [x] Istraživanje temporis.hr, biltenjavnenabave.hr, Biltenko članak
 - [x] Istraživanje MCP + Agent Skills standarda
@@ -10,13 +10,15 @@
 - [ ] Potvrde: Temporis/BJN saglasnost za korištenje znanja
 - Kriterij kraja: repo je objavljen, PROJECT_STATUS ažuran, otvorena pitanja D-001..D-004 adresirana.
 
-## FAZA 1 – TPI Foundation
-- Struktura + standardi + testna infrastruktura + sigurnosna pravila.
-- Kriterij: `node tests/*.test.mjs` zelen, CONTRIBUTING/SECURITY se poštuju.
+## FAZA 1 – TPI Foundation (ZAVRŠENA 2026-11-11)
+- [x] Struktura + standardi + testna infrastruktura + sigurnosna pravila.
+- [x] ADR-002 (TypeScript) i ADR-003 (SQLite FTS5) prihvaćeni.
+- Kriterij: `npm test` zelen ✅
 
-## FAZA 2 – TPI Agent Skills
-- Prvi paket: `bjn-knowledge`, `public-procurement-expert`, `procurement-law-research` (SKILL.md + primjeri + testovi).
-- Kriterij: 3 skilla prolaze OpenCode discovery (ime=dir, opis 1–1024 znaka) + eval bez izmišljenih referenci.
+## FAZA 2 – TPI Agent Skills (DJELOIMIČNO – 3/16)
+- [x] `bjn-knowledge`, `public-procurement-expert`, `procurement-law-research` (SKILL.md + discovery testovi).
+- [ ] Preostalih 13 skillova (isti predložak + test).
+- Kriterij: svih 16 prolazi discovery + eval bez izmišljenih referenci.
 
 ## FAZA 3 – TPI MCP Prototip
 - Read-only alati nad lokalnim testnim izvorima, auth stub, rate-limit, audit log.

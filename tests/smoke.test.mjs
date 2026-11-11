@@ -10,6 +10,10 @@ const mustExist = [
   'docs/vision.md', 'docs/architecture.md', 'docs/research.md',
   'docs/legal-and-data-rights.md', 'docs/security.md', 'docs/product-modules.md',
   'docs/decisions/ADR-001-monorepo.md',
+  'docs/skill-template.md',
+  'package.json',
+  'knowledge/record.schema.json',
+  'mcp/tools.json',
   'core', 'knowledge', 'mcp', 'apps', 'integrations', 'examples',
 ];
 for (const p of mustExist) {

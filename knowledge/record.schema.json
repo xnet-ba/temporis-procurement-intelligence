@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/xnet-ba/temporis-procurement-intelligence/knowledge/record.schema.json",
+  "title": "TPI KnowledgeRecord",
+  "description": "Tipizirani zapis stručnog znanja. Svaki zapis nosi izvor, važenje i pouzdanost.",
+  "type": "object",
+  "required": ["id", "type", "naslov", "izvor", "jurisdikcija", "statusVazenja", "nivoPouzdanosti"],
+  "properties": {
+    "id": { "type": "string", "description": "Stabilni ID, npr. zjn-2016-clan-87" },
+    "type": {
+      "type": "string",
+      "enum": ["zakon", "pravilnik", "odluka-dkom", "presuda-vus", "presuda-sud-eu",
+               "strucni-clanak", "misljenje-institucije", "faq", "hodogram", "termin"]
+    },
+    "naslov": { "type": "string" },
+    "izvor": {
+      "type": "object",
+      "required": ["naziv"],
+      "properties": {
+        "naziv": { "type": "string" },
+        "url": { "type": "string" },
+        "klasa": { "type": "string", "description": "npr. KLASA odluke DKOM-a, broj NN" }
+      }
+    },
+    "citati": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "clan": { "type": "string" },
+          "stav": { "type": "string" },
+          "tocka": { "type": "string" }
+        }
+      }
+    },
+    "jurisdikcija": { "type": "string", "enum": ["RH", "EU"] },
+    "datumObjave": { "type": "string", "format": "date" },
+    "datumVazenjaOd": { "type": "string", "format": "date" },
+    "datumVazenjaDo": { "type": "string", "format": "date" },
+    "statusVazenja": { "type": "string", "enum": ["vazeci", "historijski", "nepoznat"] },
+    "sadrzaj": { "type": "string" },
+    "nivoPouzdanosti": { "type": "string", "enum": ["visok", "srednji", "nizak"] },
+    "jezik": { "type": "string", "default": "hr" }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "mcp": "read-only v1",
+  "description": "Ugovor TPI MCP alata – implementacija u FAZI 3. Svi alati vraćaju izvore i citate.",
+  "commonOutput": ["zapisi[]", "izvori[]", "nivoPouzdanosti"],
+  "tools": [
+    { "name": "search_regulations", "description": "Pretraga propisa; vraća član, datum i status važenja.", "input": ["pojam", "jurisdikcija?"], "auth": true },
+    { "name": "search_dkom_decisions", "description": "Pretraga odluka DKOM-a po pojmu i filterima.", "input": ["pojam", "filteri?"], "auth": true },
+    { "name": "search_vus_decisions", "description": "Pretraga presuda VUS-a.", "input": ["pojam", "filteri?"], "auth": true },
+    { "name": "search_eu_case_law", "description": "Presude Suda EU + stručni materijali.", "input": ["pojam", "filteri?"], "auth": true },
+    { "name": "search_expert_articles", "description": "Pretraga stručnih članaka.", "input": ["pojam"], "auth": true },
+    { "name": "search_bjn_knowledge", "description": "Mreža znanja BJN-a (FAQ, mišljenja, članci, propisi, hodogrami). Zahtijeva licencu.", "input": ["pojam", "kategorija?"], "auth": true, "licence": "BJN" },
+    { "name": "get_procedure_workflow", "description": "Hodogram postupka korak-po-korak.", "input": ["vrstaPostupka"], "auth": true },
+    { "name": "analyze_procurement_question", "description": "Strukturirani odgovor s citatima i nivoom pouzdanosti.", "input": ["pitanje"], "auth": true },
+    { "name": "check_regulation_status", "description": "Je li propis važeći ili historijski na zadani datum.", "input": ["oznakaPropisa", "datum?"], "auth": true }
+  ]
+}

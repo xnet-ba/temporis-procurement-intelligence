@@ -2,6 +2,16 @@
 
 Format: Keep a Changelog. Datumi u UTC.
 
+## [0.2.0] – 2026-11-11
+### Dodano (FAZA 1 + prva 3 skilla FAZE 2)
+- `package.json` (`npm test` → `node --test tests/`), `tests/skills.test.mjs` (discovery + 7 obaveznih sekcija), `tests/security.test.mjs` (sken tajni)
+- `knowledge/record.schema.json` (KnowledgeRecord: tip, izvor, citati, važenje, pouzdanost)
+- `mcp/tools.json` (ugovor 9 read-only alata)
+- `docs/skill-template.md`; skillovi: `bjn-knowledge`, `public-procurement-expert`, `procurement-law-research`
+- ADR-002/ADR-003 prihvaćeni (TypeScript, SQLite FTS5)
+### Zatvoreno
+- Issue #1 (test infra), #2 (ADR odluke), #3 (prva 3 skilla)
+
 ## [0.1.0] – 2026-11-11
 ### Dodano
 - Bogati README (bedževi, mermaid dijagrami, tabele skillova/alata/aplikacija)

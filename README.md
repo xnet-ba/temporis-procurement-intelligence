@@ -6,7 +6,7 @@
 
 *Vještine · MCP server · Aplikacije · Znanje s citatima*
 
-[![Faza](https://img.shields.io/badge/faza-0%20Discovery-blue?style=for-the-badge)](./ROADMAP.md)
+[![Faza](https://img.shields.io/badge/faza-2%20Skills-green?style=for-the-badge)](./ROADMAP.md)
 [![Licenca](https://img.shields.io/badge/licenca-MIT%20free-green?style=for-the-badge](./LICENSE))
 [![Skillovi](https://img.shields.io/badge/skillova-16-orange?style=for-the-badge)](#-tpi-agent-skills--16-modula)
 [![Aplikacije](https://img.shields.io/badge/aplikacija-6-purple?style=for-the-badge)](#-tpi-apps--6-poslovnih-alata)
@@ -14,6 +14,7 @@
 [![Smoke test](https://img.shields.io/badge/smoke%20test-OK-brightgreen?style=for-the-badge)](./tests/smoke.test.mjs)
 
 **Nosilac:** Temporis savjetovanje d.o.o. · **Stručna osnova:** Bilten javne nabave (BJN) — korištenje uz dozvolu ✅
+> Status: FAZA 2 – prva 3 skilla gotova i testirana. Faza 1 foundation završen (`npm test` zelen).
 
 [🚀 Brzi start](#-brzi-start) · [📖 Dokumentacija](#-dokumentacija) · [🗺️ Roadmap](./ROADMAP.md) · [📊 Status](./PROJECT_STATUS.md) · [⚖️ Pravna osnova](./docs/legal-and-data-rights.md)
 
