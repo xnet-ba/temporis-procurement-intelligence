@@ -2,7 +2,7 @@
 
 - Datum posljednje provjere: 2026-11-11
 - Trenutna faza: FAZA 0 – Discovery i projektna postavka
-- Posljednji commit: (upisati nakon pusha)
+- Posljednji commit: dbe7dbf (faza0 struktura) + push na main
 
 ## Završeno
 - Okruženje provjereno: git 2.43, gh 2.45 (auth xnet-ba), node v22.23.4, python 3.12, opencode v2.2.7
