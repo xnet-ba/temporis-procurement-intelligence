@@ -2,6 +2,11 @@
 
 Format: Keep a Changelog. Datumi u UTC.
 
+## [0.8.0] – 2026-11-11
+### Dodano (FAZA 6 – 2/5: Nabava Academy)
+- `apps/nabava-academy/`: 3 lekcije s izvorima, kviz-CLI, bodovanje bez duplog brojanja, napredak in-memory
+- 5 testova (uključujući: lekcija ne odaje tačne odgovore)
+
 ## [0.7.0] – 2026-11-11
 ### Dodano (FAZA 6 započeta – DKOM Analyzer)
 - `apps/dkom-analyzer/`: grupisanje odluka po ishodu, pravni okvir iz FTS-a, `analyzer.test.mjs` (4 testa)

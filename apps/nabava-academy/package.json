@@ -1,0 +1,8 @@
+{
+  "name": "nabava-academy",
+  "version": "0.7.0",
+  "private": true,
+  "type": "module",
+  "description": "Nabava Academy – lekcije, kvizovi i bodovanje iz javne nabave",
+  "scripts": { "test": "node --test academy.test.mjs" }
+}

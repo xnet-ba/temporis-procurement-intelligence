@@ -1,0 +1,34 @@
+{
+  "lekcije": [
+    {
+      "id": "citanje-dkom",
+      "naslov": "Kako čitati rješenja DKOM-a",
+      "izvori": ["syn-dkom-001", "syn-dkom-002", "syn-dkom-003"],
+      "tekst": "Svako rješenje ima: žalbeni navod, dokaze, pravni temelj i odluku (ishod). Prvo identificiraj navod, zatim provjeri je li pravni temelj i dalje važeći, pa tek onda primijeni pouku na vlastiti postupak. Jedna odluka nije opće pravilo.",
+      "pitanja": [
+        { "pitanje": "Šta se prvo identificira u rješenju DKOM-a?", "odgovori": ["Žalbeni navod", "Broj stranica", "Ime sudije"], "tacan": 0 },
+        { "pitanje": "Smije li se jedna odluka primijeniti kao opće pravilo?", "odgovori": ["Da, uvijek", "Ne – vezana je za konkretan slučaj", "Samo uz dozvolu suda"], "tacan": 1 }
+      ]
+    },
+    {
+      "id": "hodogram-otvoreni",
+      "naslov": "Hodogram otvorenog postupka",
+      "izvori": ["syn-hodogram-otvoreni"],
+      "tekst": "Koraci: plan nabave, dokumentacija o nabavi, objava, ponude, pregled i ocjena, odluka o odabiru, pravna zaštita, ugovor. Svaki korak ima svoje rokove – provjeri ih u važećem propisu i DON-u, ne po sjećanju.",
+      "pitanja": [
+        { "pitanje": "Šta dolazi nakon pregleda i ocjene ponuda?", "odgovori": ["Ugovor", "Odluka o odabiru", "Objava"], "tacan": 1 },
+        { "pitanje": "Gdje se provjeravaju rokovi?", "odgovori": ["Po sjećanju", "U važećem propisu i DON-u", "Na forumu"], "tacan": 1 }
+      ]
+    },
+    {
+      "id": "zakon-vs-komentar",
+      "naslov": "Zakon, odluka ili komentar – hijerarhija izvora",
+      "izvori": ["syn-zakon-001", "syn-clanak-001"],
+      "tekst": "Hijerarhija: važeći zakon i podzakonski propis, zatim sudska praksa i odluke DKOM-a, tek onda stručni komentar. Komentar nikad ne zamjenjuje zakon. Ako izvor nije dostupan, zaključak se ne donosi.",
+      "pitanja": [
+        { "pitanje": "Šta je na vrhu hijerarhije izvora?", "odgovori": ["Stručni članak", "Važeći zakon i propis", "Mišljenje kolege"], "tacan": 1 },
+        { "pitanje": "Šta ako izvor nije dostupan?", "odgovori": ["Nagađa se", "Zaključak se ne donosi", "Pita se forum"], "tacan": 1 }
+      ]
+    }
+  ]
+}
