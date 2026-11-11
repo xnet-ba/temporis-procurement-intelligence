@@ -1,0 +1,15 @@
+# .gitignore – tajne i generisano nikad ne idu u git
+.env
+.env.*
+*.key
+*.pem
+secrets/
+node_modules/
+dist/
+build/
+.venv/
+__pycache__/
+*.pyc
+coverage/
+.DS_Store
+opencode.local.json
