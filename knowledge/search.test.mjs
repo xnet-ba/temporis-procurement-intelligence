@@ -15,9 +15,9 @@ describe('knowledge store', () => {
     process.env.TPI_DB = f;
   });
 
-  it(' gradi bazu iz sintetičkih zapisa (9)', () => {
+  it(' gradi bazu iz sintetičkih zapisa (11)', () => {
     openDb(process.env.TPI_DB);
-    assert.equal(searchRecords('ogledni', { limit: 50 }).length, 9);
+    assert.equal(searchRecords('ogledni', { limit: 50 }).length, 11);
   });
 
   it('FTS5 nalazi relevantan zapis, a ne sve', () => {

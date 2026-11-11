@@ -22,7 +22,7 @@
     "jurisdikcija": "RH",
     "datumObjave": "2026-02-01",
     "statusVazenja": "nepoznat",
-    "sadrzaj": "Ogledni obrazac: naručitelj pogrešno primijenio kriterij ekonomski najpovoljnije ponude. Služi samo testiranju filtera.",
+    "sadrzaj": "Ogledni obrazac: naručitelj pogrešno primijenio kriterij ekonomski najpovoljnije ponude. Ishod: žalba se usvaja; odluka o odabiru se ukida. Služi samo testiranju filtera.",
     "nivoPouzdanosti": "nizak",
     "jezik": "hr"
   },
@@ -120,6 +120,32 @@
     "datumVazenjaOd": "2025-01-01",
     "statusVazenja": "vazeci",
     "sadrzaj": "Ogledni važeći tekst za testiranje statusa. Vrijedi samo unutar ogledne baze.",
+    "nivoPouzdanosti": "nizak",
+    "jezik": "hr"
+  },
+  {
+    "id": "syn-dkom-002",
+    "sinteticki": true,
+    "type": "odluka-dkom",
+    "naslov": "OGLEDNA odluka DKOM-a – neosnovana žalba na tehničke specifikacije (nije stvarna odluka)",
+    "izvor": { "naziv": "Sintetički ogled TPI", "klasa": "OGLED-KLASA-002" },
+    "jurisdikcija": "RH",
+    "datumObjave": "2026-05-01",
+    "statusVazenja": "nepoznat",
+    "sadrzaj": "Ogledni obrazac: specifikacije neutralne, uz klauzulu o jednakovrijednosti. Ishod: žalba se odbija kao neosnovana. Služi samo testiranju filtera.",
+    "nivoPouzdanosti": "nizak",
+    "jezik": "hr"
+  },
+  {
+    "id": "syn-dkom-003",
+    "sinteticki": true,
+    "type": "odluka-dkom",
+    "naslov": "OGLEDNA odluka DKOM-a – bitna povreda, poništenje postupka (nije stvarna odluka)",
+    "izvor": { "naziv": "Sintetički ogled TPI", "klasa": "OGLED-KLASA-003" },
+    "jurisdikcija": "RH",
+    "datumObjave": "2026-08-01",
+    "statusVazenja": "nepoznat",
+    "sadrzaj": "Ogledni obrazac: diskriminirajući uslov bez jednakovrijednosti. Ishod: postupak se poništava zbog bitne povrede. Služi samo testiranju filtera.",
     "nivoPouzdanosti": "nizak",
     "jezik": "hr"
   }

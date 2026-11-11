@@ -2,6 +2,14 @@
 
 Format: Keep a Changelog. Datumi u UTC.
 
+## [0.7.0] – 2026-11-11
+### Dodano (FAZA 6 započeta – DKOM Analyzer)
+- `apps/dkom-analyzer/`: grupisanje odluka po ishodu, pravni okvir iz FTS-a, `analyzer.test.mjs` (4 testa)
+- `knowledge/db.mjs`: hash-verzioniranje baze (atomski rebuild preko temp fajla – fix utrke paralelnih procesa)
+- 2 nove ogledne odluke DKOM-a (ukupno 11 zapisa)
+### Otvoreno
+- Issue #9 (preostale 4 aplikacije Faze 6)
+
 ## [0.6.0] – 2026-11-11
 ### Dodano (FAZA 5 – Tender Check AI, prvi poslovni alat)
 - `apps/tender-check/`: `check.mjs` (10 stavki, diskriminatorni signali, FTS reference), `cli.mjs`, 3 ogledna DON-a, `check.test.mjs` (4 eval testa)

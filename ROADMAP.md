@@ -35,8 +35,9 @@
 - [x] Eval na 3 ogledna DON-a (uredan / bez roka / diskriminatorni) – očekivani nalazi.
 - Kriterij: evaluacija tačnosti na oglednim dokumentima. ✅
 
-## FAZA 6 – Napredni proizvodi
-- Workspace, Radar, DKOM Analyzer, Contract Watch, Academy.
+## FAZA 6 – NAPREDNI PROIZVODI (ZAPOČETA – 1/5)
+- [x] DKOM Analyzer: obrasci po ishodu + pravni okvir, eval nad 3 ogledne odluke.
+- [ ] Nabava Workspace, Tender Radar, Contract Watch, Nabava Academy (issue #9).
 - Kriterij po aplikaciji: zaseban mini-spec + demo + test.
 
 ## Prvih 30 dana (prijedlog)

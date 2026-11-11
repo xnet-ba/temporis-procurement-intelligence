@@ -1,0 +1,8 @@
+{
+  "name": "dkom-analyzer",
+  "version": "0.6.0",
+  "private": true,
+  "type": "module",
+  "description": "DKOM Analyzer – obrasci iz prakse + poređenje s propisima",
+  "scripts": { "test": "node --test analyzer.test.mjs", "analyze": "node cli.mjs" }
+}

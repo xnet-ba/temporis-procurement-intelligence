@@ -10,27 +10,52 @@ const DB_FILE = process.env.TPI_DB || path.join(here, 'knowledge.db');
 
 let _db = null;
 
-export function openDb(file = DB_FILE) {
-  const fresh = !fs.existsSync(file);
-  const d = new DatabaseSync(file);
-  if (fresh) {
-    d.exec(`CREATE TABLE records (
-      id TEXT PRIMARY KEY, type TEXT, naslov TEXT, izvor TEXT, citati TEXT,
-      jurisdikcija TEXT, datumObjave TEXT, datumVazenjaOd TEXT, datumVazenjaDo TEXT,
-      zamijenjenSa TEXT, statusVazenja TEXT, sadrzaj TEXT, nivoPouzdanosti TEXT, jezik TEXT
-    )`);
-    d.exec(`CREATE VIRTUAL TABLE fts USING fts5(id, naslov, sadrzaj, tokenize='unicode61')`);
-    const records = JSON.parse(fs.readFileSync(path.join(here, 'synthetic', 'records.json'), 'utf8'));
-    const ins = d.prepare(`INSERT INTO records VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)`);
-    const fts = d.prepare(`INSERT INTO fts (id, naslov, sadrzaj) VALUES (?,?,?)`);
-    for (const r of records) {
-      ins.run(r.id, r.type, r.naslov, JSON.stringify(r.izvor), JSON.stringify(r.citati ?? []),
-        r.jurisdikcija, r.datumObjave ?? null, r.datumVazenjaOd ?? null, r.datumVazenjaDo ?? null,
-        r.zamijenjenSa ?? null, r.statusVazenja, r.sadrzaj, r.nivoPouzdanosti, r.jezik ?? 'hr');
-      fts.run(r.id, r.naslov, r.sadrzaj);
-    }
+import { createHash } from 'node:crypto';
+
+function contentHash() {
+  return createHash('sha256').update(fs.readFileSync(path.join(here, 'synthetic', 'records.json'))).digest('hex');
+}
+
+function build(d, hash) {
+  d.exec(`DROP TABLE IF EXISTS records`); d.exec(`DROP TABLE IF EXISTS fts`);
+  d.exec(`CREATE TABLE meta (k TEXT PRIMARY KEY, v TEXT)`);
+  d.exec(`CREATE TABLE records (
+    id TEXT PRIMARY KEY, type TEXT, naslov TEXT, izvor TEXT, citati TEXT,
+    jurisdikcija TEXT, datumObjave TEXT, datumVazenjaOd TEXT, datumVazenjaDo TEXT,
+    zamijenjenSa TEXT, statusVazenja TEXT, sadrzaj TEXT, nivoPouzdanosti TEXT, jezik TEXT
+  )`);
+  d.exec(`CREATE VIRTUAL TABLE fts USING fts5(id, naslov, sadrzaj, tokenize='unicode61')`);
+  const records = JSON.parse(fs.readFileSync(path.join(here, 'synthetic', 'records.json'), 'utf8'));
+  const ins = d.prepare(`INSERT INTO records VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)`);
+  const fts = d.prepare(`INSERT INTO fts (id, naslov, sadrzaj) VALUES (?,?,?)`);
+  for (const r of records) {
+    ins.run(r.id, r.type, r.naslov, JSON.stringify(r.izvor), JSON.stringify(r.citati ?? []),
+      r.jurisdikcija, r.datumObjave ?? null, r.datumVazenjaOd ?? null, r.datumVazenjaDo ?? null,
+      r.zamijenjenSa ?? null, r.statusVazenja, r.sadrzaj, r.nivoPouzdanosti, r.jezik ?? 'hr');
+    fts.run(r.id, r.naslov, r.sadrzaj);
   }
-  return d;
+  d.prepare(`INSERT INTO meta VALUES ('recordsHash', ?)`).run(hash);
+}
+
+export function openDb(file = DB_FILE) {
+  const hash = contentHash();
+  const needBuild = (() => {
+    try {
+      const d = new DatabaseSync(file, { readOnly: true });
+      const cur = d.prepare(`SELECT v FROM meta WHERE k='recordsHash'`).get()?.v;
+      d.close();
+      return cur !== hash;
+    } catch { return true; }
+  })();
+  if (needBuild) {
+    const tmp = `${file}.build-${process.pid}.db`;
+    try { fs.unlinkSync(tmp); } catch { /* nema */ }
+    const d = new DatabaseSync(tmp);
+    build(d, hash);
+    d.close();
+    fs.renameSync(tmp, file); // atomski – čitači nikad ne vide polustanje
+  }
+  return new DatabaseSync(file);
 }
 
 function row(r) {
