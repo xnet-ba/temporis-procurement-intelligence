@@ -14,7 +14,7 @@
 [![Smoke test](https://img.shields.io/badge/smoke%20test-OK-brightgreen?style=for-the-badge)](./tests/smoke.test.mjs)
 
 **Nosilac:** Temporis savjetovanje d.o.o. · **Stručna osnova:** Bilten javne nabave (BJN) — korištenje uz dozvolu ✅
-> Status: FAZA 6 (2/5) – DKOM Analyzer + Academy gotovi. Sljedeće: Workspace, Radar, Contract Watch (issue #9).
+> Status: FAZA 6 (3/5) – Analyzer + Academy + Radar gotovi. Sljedeće: Workspace, Contract Watch (issue #9).
 
 [🚀 Brzi start](#-brzi-start) · [📖 Dokumentacija](#-dokumentacija) · [🗺️ Roadmap](./ROADMAP.md) · [📊 Status](./PROJECT_STATUS.md) · [⚖️ Pravna osnova](./docs/legal-and-data-rights.md)
 
@@ -160,7 +160,7 @@ Prva verzija je **read-only** — nijedan alat ne mijenja podatke.
 |---|---|---|
 | 🔍 **Tender Check AI** | Pregled dokumentacije prije objave/ponude | ✅ gotov (v0.6.0) |
 | 🗂️ **Nabava Workspace** | Projekti · dokumenti · evaluacija · ugovori · aneksi | 📋 Faza 6 |
-| 📡 **Tender Radar** | CPV · predmet · lokacija · vrijednost · rokovi · obavijesti | 📋 Faza 6 |
+| 📡 **Tender Radar** | CPV · predmet · lokacija · vrijednost · rokovi · obavijesti | ✅ gotov (v0.9.0) |
 | ⚖️ **DKOM Analyzer** | Obrasci iz prakse + poređenje s propisima i sudskom praksom | ✅ gotov (v0.7.0) |
 | 📜 **Contract Watch** | Rokovi · izmjene · garancije · rizici · izvještaji | 📋 Faza 6 |
 | 🎓 **Nabava Academy** | Vodiči · lekcije · testovi · simulacije postupaka | ✅ gotov (v0.8.0) |

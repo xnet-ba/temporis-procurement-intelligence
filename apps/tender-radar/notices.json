@@ -1,0 +1,42 @@
+[
+  {
+    "id": "OGLED-OBJ-001",
+    "sinteticka": true,
+    "predmet": "Nabava uredskog materijala",
+    "cpv": ["30190000", "30192000"],
+    "lokacija": "Zagreb",
+    "vrijednost": 40000,
+    "rok": "2026-12-20",
+    "vrsta": "otvoreni postupak"
+  },
+  {
+    "id": "OGLED-OBJ-002",
+    "sinteticka": true,
+    "predmet": "Usluge čišćenja poslovnih prostorija",
+    "cpv": ["90910000"],
+    "lokacija": "Split",
+    "vrijednost": 60000,
+    "rok": "2026-12-15",
+    "vrsta": "otvoreni postupak"
+  },
+  {
+    "id": "OGLED-OBJ-003",
+    "sinteticka": true,
+    "predmet": "Nabava prijenosnih računala",
+    "cpv": ["30210000", "30213000"],
+    "lokacija": "Zagreb",
+    "vrijednost": 100000,
+    "rok": "2027-01-15",
+    "vrsta": "otvoreni postupak"
+  },
+  {
+    "id": "OGLED-OBJ-004",
+    "sinteticka": true,
+    "predmet": "Izgradnja dječjeg igrališta",
+    "cpv": ["45112000"],
+    "lokacija": "Osijek",
+    "vrijednost": 250000,
+    "rok": "2026-10-01",
+    "vrsta": "otvoreni postupak"
+  }
+]

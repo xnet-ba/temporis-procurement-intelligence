@@ -1,0 +1,8 @@
+{
+  "naziv": "Ogledni IT ponuditelj",
+  "cpv": ["30190000", "30210000"],
+  "lokacije": ["Zagreb"],
+  "minVrijednost": 10000,
+  "maxVrijednost": 150000,
+  "vrste": ["otvoreni postupak"]
+}

@@ -2,6 +2,11 @@
 
 Format: Keep a Changelog. Datumi u UTC.
 
+## [0.9.0] – 2026-11-11
+### Dodano (FAZA 6 – 3/5: Tender Radar)
+- `apps/tender-radar/`: 4 ogledne objave, profil-matching (CPV grupa +2, ostalo +1), isključenje po roku, digest
+- 5 testova bodovanja (puno/djelomično/bez poklapanja, rok, sortiranje)
+
 ## [0.8.0] – 2026-11-11
 ### Dodano (FAZA 6 – 2/5: Nabava Academy)
 - `apps/nabava-academy/`: 3 lekcije s izvorima, kviz-CLI, bodovanje bez duplog brojanja, napredak in-memory

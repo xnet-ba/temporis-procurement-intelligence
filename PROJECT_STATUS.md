@@ -1,7 +1,7 @@
 # PROJECT_STATUS
 
 - Datum posljednje provjere: 2026-11-11
-- Trenutna faza: FAZA 6 (2/5) – sljedeće: Workspace, Radar, Contract Watch (issue #9)
+- Trenutna faza: FAZA 6 (3/5) – sljedeće: Workspace, Contract Watch (issue #9)
 - Posljednji commit: dbe7dbf (faza0 struktura) + push na main
 
 ## Završeno

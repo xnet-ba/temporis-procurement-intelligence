@@ -1,0 +1,8 @@
+{
+  "name": "tender-radar",
+  "version": "0.8.0",
+  "private": true,
+  "type": "module",
+  "description": "Tender Radar – matching profila ponuditelja s objavama",
+  "scripts": { "test": "node --test radar.test.mjs" }
+}
