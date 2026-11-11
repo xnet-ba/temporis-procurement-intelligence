@@ -15,10 +15,9 @@
 - [x] ADR-002 (TypeScript) i ADR-003 (SQLite FTS5) prihvaćeni.
 - Kriterij: `npm test` zelen ✅
 
-## FAZA 2 – TPI Agent Skills (DJELOIMIČNO – 3/16)
-- [x] `bjn-knowledge`, `public-procurement-expert`, `procurement-law-research` (SKILL.md + discovery testovi).
-- [ ] Preostalih 13 skillova (isti predložak + test).
-- Kriterij: svih 16 prolazi discovery + eval bez izmišljenih referenci.
+## FAZA 2 – TPI Agent Skills (ZAVRŠENA 2026-11-11 – 16/16)
+- [x] Svih 16 skillova (SKILL.md + discovery i sekcijski testovi).
+- Kriterij: svih 16 prolazi discovery + struktura bez izmišljenih referenci. ✅
 
 ## FAZA 3 – TPI MCP Prototip (ZAVRŠEN 2026-11-11)
 - [x] Read-only alati (9) nad oglednim izvorima, stub-auth, BJN licence-check, rate-limit, audit log.

@@ -2,6 +2,13 @@
 
 Format: Keep a Changelog. Datumi u UTC.
 
+## [0.4.0] – 2026-11-11
+### Dodano (FAZA 2 kompletna – 16/16 skillova)
+- Preostalih 13 SKILL.md po predlošku (dkom/vus/eu analize, tender review, specifikacije, ESPD, ponuda, žalba, rokovi, ugovor, rizik, izvještaji, radar)
+- Svi primjeri označeni ilustrativno; bez izmišljenih KLASA/CELEX brojeva
+### Test
+- `npm test`: 61/61 zeleno (16 skillova × discovery + sekcije)
+
 ## [0.3.0] – 2026-11-11
 ### Dodano (FAZA 3 – MCP prototip, 9/9 testova zeleno)
 - `mcp/server.mjs`: 9 read-only alata, zod validacija, stub-auth, BJN licence-check, rate-limit, audit log (bez PII)
