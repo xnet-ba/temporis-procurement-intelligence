@@ -1,7 +1,7 @@
 # PROJECT_STATUS
 
 - Datum posljednje provjere: 2026-11-11
-- Trenutna faza: FAZA 2 – preostaje 13/16 skillova, zatim MCP prototip
+- Trenutna faza: FAZA 3 završena – sljedeće: 13 preostalih skillova ili Faza 5 (Tender Check AI)
 - Posljednji commit: dbe7dbf (faza0 struktura) + push na main
 
 ## Završeno

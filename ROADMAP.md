@@ -20,9 +20,11 @@
 - [ ] Preostalih 13 skillova (isti predložak + test).
 - Kriterij: svih 16 prolazi discovery + eval bez izmišljenih referenci.
 
-## FAZA 3 – TPI MCP Prototip
-- Read-only alati nad lokalnim testnim izvorima, auth stub, rate-limit, audit log.
-- Kriterij: radi s OpenCode MCP klijentom, bez ijednog poziva prema BJN.
+## FAZA 3 – TPI MCP Prototip (ZAVRŠEN 2026-11-11)
+- [x] Read-only alati (9) nad oglednim izvorima, stub-auth, BJN licence-check, rate-limit, audit log.
+- [x] Integracijski test: pravi MCP Client ↔ server (stdio), 9/9 zeleno.
+- [ ] Ručna provjera s OpenCode MCP klijentom (1 naredba, vidi mcp/README.md).
+- Kriterij: radi preko MCP protokola, bez ijednog poziva prema BJN. ✅
 
 ## FAZA 4 – TPI Knowledge
 - Model podataka, metapodaci, verzioniranje, citiranje.

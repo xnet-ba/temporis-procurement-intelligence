@@ -2,6 +2,16 @@
 
 Format: Keep a Changelog. Datumi u UTC.
 
+## [0.3.0] – 2026-11-11
+### Dodano (FAZA 3 – MCP prototip, 9/9 testova zeleno)
+- `mcp/server.mjs`: 9 read-only alata, zod validacija, stub-auth, BJN licence-check, rate-limit, audit log (bez PII)
+- `mcp/server.test.mjs`: pravi MCP Client ↔ server preko stdio (alati, validacija, auth, licenca, rate-limit)
+- `knowledge/synthetic/records.json`: 7 oglednih zapisa, svi označeni SINTETIČKI
+- `mcp/README.md`: pokretanje + OpenCode wiring (`opencode mcp add tpi`)
+- Root `npm test` pokriva i mcp testove
+### Zatvoreno
+- Issue #4 (MCP prototip)
+
 ## [0.2.0] – 2026-11-11
 ### Dodano (FAZA 1 + prva 3 skilla FAZE 2)
 - `package.json` (`npm test` → `node --test tests/`), `tests/skills.test.mjs` (discovery + 7 obaveznih sekcija), `tests/security.test.mjs` (sken tajni)
