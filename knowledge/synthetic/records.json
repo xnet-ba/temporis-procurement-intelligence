@@ -90,5 +90,37 @@
     "sadrzaj": "Ogledni stručni komentar za testiranje pretrage članaka. Komentar nije zakon.",
     "nivoPouzdanosti": "nizak",
     "jezik": "hr"
+  },
+  {
+    "id": "syn-pravilnik-001",
+    "sinteticki": true,
+    "type": "pravilnik",
+    "naslov": "OGLEDNI pravilnik – HISTORIJSKI, zamijenjen (nije važeći propis)",
+    "izvor": { "naziv": "Sintetički ogled TPI", "klasa": "OGLED-NN-001/00" },
+    "citati": [{ "clan": "5", "stav": "2" }],
+    "jurisdikcija": "RH",
+    "datumObjave": "2020-01-01",
+    "datumVazenjaOd": "2020-01-01",
+    "datumVazenjaDo": "2024-12-31",
+    "zamijenjenSa": "syn-pravilnik-002",
+    "statusVazenja": "historijski",
+    "sadrzaj": "Ogledni historijski tekst za testiranje razlikovanja važeće/historijsko. Ne koristiti kao izvor.",
+    "nivoPouzdanosti": "nizak",
+    "jezik": "hr"
+  },
+  {
+    "id": "syn-pravilnik-002",
+    "sinteticki": true,
+    "type": "pravilnik",
+    "naslov": "OGLEDNI pravilnik – VAŽEĆI u oglednoj bazi (nije stvarni propis)",
+    "izvor": { "naziv": "Sintetički ogled TPI", "klasa": "OGLED-NN-002/00" },
+    "citati": [{ "clan": "5", "stav": "2" }],
+    "jurisdikcija": "RH",
+    "datumObjave": "2025-01-01",
+    "datumVazenjaOd": "2025-01-01",
+    "statusVazenja": "vazeci",
+    "sadrzaj": "Ogledni važeći tekst za testiranje statusa. Vrijedi samo unutar ogledne baze.",
+    "nivoPouzdanosti": "nizak",
+    "jezik": "hr"
   }
 ]

@@ -2,6 +2,14 @@
 
 Format: Keep a Changelog. Datumi u UTC.
 
+## [0.5.0] – 2026-11-11
+### Dodano (FAZA 4 – Knowledge, MCP na FTS5)
+- `knowledge/db.mjs`: SQLite + FTS5 (`node:sqlite`, nula novih zavisnosti), verzioniranje (`zamijenjenSa`, datumi važenja)
+- `knowledge/search.test.mjs`: 6 citatnih testova (FTS, važeći/historijski, odbijanje bez izvora)
+- 2 nova ogledna zapisa (važeći vs historijski pravilnik); MCP `check_regulation_status` koristi pravu logiku važenja
+### Zatvoreno
+- Issue #7 (Faza 4)
+
 ## [0.4.0] – 2026-11-11
 ### Dodano (FAZA 2 kompletna – 16/16 skillova)
 - Preostalih 13 SKILL.md po predlošku (dkom/vus/eu analize, tender review, specifikacije, ESPD, ponuda, žalba, rokovi, ugovor, rizik, izvještaji, radar)

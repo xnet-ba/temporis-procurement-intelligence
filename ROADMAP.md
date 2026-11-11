@@ -25,9 +25,10 @@
 - [ ] Ručna provjera s OpenCode MCP klijentom (1 naredba, vidi mcp/README.md).
 - Kriterij: radi preko MCP protokola, bez ijednog poziva prema BJN. ✅
 
-## FAZA 4 – TPI Knowledge
-- Model podataka, metapodaci, verzioniranje, citiranje.
-- Kriterij: test razlikuje važeći/historijski propis, odbija odgovor bez izvora.
+## FAZA 4 – TPI Knowledge (ZAVRŠENA 2026-11-11)
+- [x] SQLite + FTS5 store (`knowledge/db.mjs`, shema po `record.schema.json`), MCP prebačen na FTS.
+- [x] Citatni testovi: važeći/historijski, prazan rezultat = odbijanje, svaki zapis ima izvor+važenje+pouzdanost.
+- Kriterij: test razlikuje važeći/historijski propis, odbija odgovor bez izvora. ✅
 
 ## FAZA 5 – Tender Check AI
 - Analiza tenderske dokumentacije (lokalni dokumenti koje korisnik učita).

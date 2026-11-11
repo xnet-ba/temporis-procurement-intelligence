@@ -1,14 +1,14 @@
-// TPI MCP server – read-only prototip na SINTETIČKIM podacima.
-// Pokretanje: npm start (stdio transport). Nema pristupa BJN/EOJN/DKOM bazama.
+// TPI MCP server – read-only prototip na SINTETIČKIM podacima (knowledge/db.mjs, FTS5).
+// Nema pristupa BJN/EOJN/DKOM niti bilo kojoj vanjskoj bazi.
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { McpServer } from '@modelcontextprotocol/server';
 import { serveStdio } from '@modelcontextprotocol/server/stdio';
 import * as z from 'zod';
+import { searchRecords, getRecord, recordStatus } from '../knowledge/db.mjs';
 
 const here = path.dirname(fileURLToPath(import.meta.url));
-const records = JSON.parse(fs.readFileSync(path.join(here, '..', 'knowledge', 'synthetic', 'records.json'), 'utf8'));
 
 const CFG = {
   token: process.env.TPI_MCP_TOKEN || null, // stub-auth: ako je postavljen, svaki poziv ga mora sadržavati
@@ -39,12 +39,7 @@ function out(payload) {
 }
 
 function search(pojam, types = null, jurisdikcija = null) {
-  const q = pojam.toLowerCase();
-  return records.filter((r) =>
-    (!types || types.includes(r.type)) &&
-    (!jurisdikcija || r.jurisdikcija === jurisdikcija) &&
-    `${r.id} ${r.naslov} ${r.sadrzaj}`.toLowerCase().includes(q)
-  );
+  return searchRecords(pojam, { types, jurisdikcija, limit: 10 });
 }
 
 const Token = { token: z.string().optional().describe('stub-auth token (obavezan ako je TPI_MCP_TOKEN postavljen)') };
@@ -99,7 +94,7 @@ serveStdio(() => {
     { _desc: 'Hodogram postupka korak-po-korak (ogledni podaci).', _schema: z.object({ vrstaPostupka: z.string().min(1), ...Token }) },
     (a) => {
       const found = search(a.vrstaPostupka, ['hodogram']);
-      if (!found.length) return { status: 'hodogram nije pronađen', dostupni: records.filter((r) => r.type === 'hodogram').map((r) => r.id) };
+      if (!found.length) return { status: 'hodogram nije pronađen', dostupni: searchRecords('hodogram', { types: ['hodogram'] }).map((r) => r.id) };
       return { hodogram: found[0], nivoPouzdanosti: 'nizak' };
     });
 
@@ -121,8 +116,7 @@ serveStdio(() => {
     (a) => {
       const found = search(a.oznakaPropisa, ['zakon', 'pravilnik']);
       if (!found.length) return { status: 'nepoznat', napomena: 'propis nije pronađen u oglednoj bazi' };
-      const r = found[0];
-      return { id: r.id, status: r.statusVazenja, datumVazenjaOd: r.datumVazenjaOd, datumVazenjaDo: r.datumVazenjaDo };
+      return { id: found[0].id, ...recordStatus(found[0].id, a.datum) };
     });
 
   return server;
