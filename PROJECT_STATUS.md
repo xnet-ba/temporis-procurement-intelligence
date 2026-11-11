@@ -15,8 +15,8 @@
 - Kreiranje javnog repozitorija + inicijalni push
 
 ## Blokade / otvorena pitanja
-- D-001: Nema potvrde o licenci/API pravu na BJN sadržaj → read-only prototip samo na sintetičkim podacima
-- D-002: Izbor licence cijelog projekta → treba odobrenje (vidi LICENSE.NOTE.md)
+- D-001: RIJEŠENO 2026-11-11 – dozvola za BJN sadržaj dobijena (izjava nosioca), uz atribuciju
+- D-002: RIJEŠENO 2026-11-11 – licenca MIT (LICENSE)
 - D-003: Tehnološki izbor MCP jezika (TS vs Python) → ADR-002 daje preporuku, odluka u Fazi 1
 - D-004: Izbor pohrane znanja (SQLite FTS vs Postgres/pgvector) → odluka u Fazi 1 nakon ADR-003
 
