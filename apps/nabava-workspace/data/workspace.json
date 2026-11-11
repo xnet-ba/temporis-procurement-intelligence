@@ -1,0 +1,15 @@
+{
+  "projekti": [
+    {
+      "id": "P-001",
+      "naziv": "Ogledni projekat – uredski materijal",
+      "vrsta": "javna nabava",
+      "sinteticki": true,
+      "stavke": [
+        { "tip": "dokument", "naslov": "Dokumentacija o nabavi v1", "rok": null, "status": "zakljuceno" },
+        { "tip": "rok", "naslov": "Rok za predaju ponuda", "rok": "2026-12-20", "status": "otvoreno" },
+        { "tip": "evaluacija", "naslov": "Pregled i ocjena ponuda", "rok": "2027-01-15", "status": "otvoreno" }
+      ]
+    }
+  ]
+}

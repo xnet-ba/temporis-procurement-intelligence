@@ -1,0 +1,8 @@
+{
+  "name": "nabava-workspace",
+  "version": "0.10.0",
+  "private": true,
+  "type": "module",
+  "description": "Nabava Workspace – projekti cijelog ciklusa nabave",
+  "scripts": { "test": "node --test workspace.test.mjs" }
+}

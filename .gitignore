@@ -7,8 +7,8 @@ secrets/
 node_modules/
 mcp/node_modules/
 mcp/audit*.log
+*-test.json
 *.db
-knowledge/*-test.db
 dist/
 build/
 .venv/

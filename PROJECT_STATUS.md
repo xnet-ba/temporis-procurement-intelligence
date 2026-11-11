@@ -1,7 +1,7 @@
 # PROJECT_STATUS
 
 - Datum posljednje provjere: 2026-11-11
-- Trenutna faza: FAZA 6 (4/5) – sljedeće: Nabava Workspace (issue #9)
+- Trenutna faza: SVE FAZE 0–6 ZAVRŠENE (v0.11.0) – sljedeće: stvarni podaci + produkcijski auth
 - Posljednji commit: dbe7dbf (faza0 struktura) + push na main
 
 ## Završeno

@@ -2,6 +2,13 @@
 
 Format: Keep a Changelog. Datumi u UTC.
 
+## [0.11.0] – 2026-11-11
+### Dodano (FAZA 6 kompletna – 5/5: Nabava Workspace)
+- `apps/nabava-workspace/`: projekti + tipizirane stavke + rokovi/kašnjenja, JSON perzistencija (`TPI_WORKSPACE`), 5 testova
+- SVE FAZE 0–6 ZAVRŠENE
+### Zatvoreno
+- Issue #9 (Faza 6)
+
 ## [0.10.0] – 2026-11-11
 ### Dodano (FAZA 6 – 4/5: Contract Watch)
 - `apps/contract-watch/`: checkUgovor + portfolio + digest, 2 ogledna ugovora, `TPI_CONTRACTS` za vlastite podatke

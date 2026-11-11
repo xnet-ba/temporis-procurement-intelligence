@@ -6,7 +6,7 @@
 
 *Vještine · MCP server · Aplikacije · Znanje s citatima*
 
-[![Faza](https://img.shields.io/badge/faza-5%20Tender%20Check-green?style=for-the-badge)](./ROADMAP.md)
+[![Faza](https://img.shields.io/badge/sve%20faze%200--6-završeno-brightgreen?style=for-the-badge)](./ROADMAP.md)
 [![Licenca](https://img.shields.io/badge/licenca-MIT%20free-green?style=for-the-badge](./LICENSE))
 [![Skillovi](https://img.shields.io/badge/skillova-16-orange?style=for-the-badge)](#-tpi-agent-skills--16-modula)
 [![Aplikacije](https://img.shields.io/badge/aplikacija-6-purple?style=for-the-badge)](#-tpi-apps--6-poslovnih-alata)
@@ -14,7 +14,7 @@
 [![Smoke test](https://img.shields.io/badge/smoke%20test-OK-brightgreen?style=for-the-badge)](./tests/smoke.test.mjs)
 
 **Nosilac:** Temporis savjetovanje d.o.o. · **Stručna osnova:** Bilten javne nabave (BJN) — korištenje uz dozvolu ✅
-> Status: FAZA 6 (4/5) – ostao samo Nabava Workspace (issue #9).
+> Status: SVE FAZE 0–6 ZAVRŠENE (v0.11.0, 94/94 testa). Sljedeće: stvarni podaci (BJN izvoz), eval na stvarnim dokumentima, produkcijski auth.
 
 [🚀 Brzi start](#-brzi-start) · [📖 Dokumentacija](#-dokumentacija) · [🗺️ Roadmap](./ROADMAP.md) · [📊 Status](./PROJECT_STATUS.md) · [⚖️ Pravna osnova](./docs/legal-and-data-rights.md)
 
@@ -159,7 +159,7 @@ Prva verzija je **read-only** — nijedan alat ne mijenja podatke.
 | Aplikacija | Faza ciklusa nabave | Status |
 |---|---|---|
 | 🔍 **Tender Check AI** | Pregled dokumentacije prije objave/ponude | ✅ gotov (v0.6.0) |
-| 🗂️ **Nabava Workspace** | Projekti · dokumenti · evaluacija · ugovori · aneksi | 📋 Faza 6 |
+| 🗂️ **Nabava Workspace** | Projekti · dokumenti · evaluacija · ugovori · aneksi | ✅ gotov (v0.11.0) |
 | 📡 **Tender Radar** | CPV · predmet · lokacija · vrijednost · rokovi · obavijesti | ✅ gotov (v0.9.0) |
 | ⚖️ **DKOM Analyzer** | Obrasci iz prakse + poređenje s propisima i sudskom praksom | ✅ gotov (v0.7.0) |
 | 📜 **Contract Watch** | Rokovi · izmjene · garancije · rizici · izvještaji | ✅ gotov (v0.10.0) |
