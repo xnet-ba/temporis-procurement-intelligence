@@ -39,7 +39,8 @@
 - [x] DKOM Analyzer: obrasci po ishodu + pravni okvir, eval nad 3 ogledne odluke.
 - [x] Nabava Academy: 3 lekcije + kviz + bodovanje, lekcija ne odaje odgovore.
 - [x] Tender Radar: bodovanje profila (CPV grupa/lokacija/vrsta/vrijednost/rok), digest s datumom provjere.
-- [ ] Nabava Workspace, Contract Watch (issue #9).
+- [x] Contract Watch: garancije/rok/obaveze/aneksi, portfolio digest, JSON perzistencija.
+- [ ] Nabava Workspace (issue #9).
 - Kriterij po aplikaciji: zaseban mini-spec + demo + test.
 
 ## Prvih 30 dana (prijedlog)

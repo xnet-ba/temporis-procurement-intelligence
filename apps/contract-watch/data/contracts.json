@@ -1,0 +1,32 @@
+{
+  "ugovori": [
+    {
+      "id": "OGLED-UG-001",
+      "sinteticki": true,
+      "naziv": "Ogledni ugovor – uredski materijal",
+      "narucitelj": "Ogledna ustanova",
+      "vrijednost": 40000,
+      "rokZavrsetka": "2027-06-30",
+      "garancije": [{ "vrsta": "bankarska garancija", "iznos": 4000, "vaziDo": "2027-09-30" }],
+      "aneksi": [],
+      "obaveze": [
+        { "opis": "Isporuka Q1", "rok": "2027-03-31", "status": "izvrseno" },
+        { "opis": "Isporuka Q2", "rok": "2027-06-30", "status": "u-toku" }
+      ]
+    },
+    {
+      "id": "OGLED-UG-002",
+      "sinteticki": true,
+      "naziv": "Ogledni ugovor – računala (rizičan)",
+      "narucitelj": "Ogledna ustanova",
+      "vrijednost": 100000,
+      "rokZavrsetka": "2026-12-01",
+      "garancije": [{ "vrsta": "bankarska garancija", "iznos": 10000, "vaziDo": "2026-11-20" }],
+      "aneksi": [{ "broj": "Aneks 1", "opis": "Produženje roka isporuke", "datum": "2026-10-15" }],
+      "obaveze": [
+        { "opis": "Isporuka opreme", "rok": "2026-11-01", "status": "u-toku" },
+        { "opis": "Primopredaja", "rok": "2026-12-01", "status": "u-toku" }
+      ]
+    }
+  ]
+}

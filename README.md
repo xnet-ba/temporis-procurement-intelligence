@@ -14,7 +14,7 @@
 [![Smoke test](https://img.shields.io/badge/smoke%20test-OK-brightgreen?style=for-the-badge)](./tests/smoke.test.mjs)
 
 **Nosilac:** Temporis savjetovanje d.o.o. · **Stručna osnova:** Bilten javne nabave (BJN) — korištenje uz dozvolu ✅
-> Status: FAZA 6 (3/5) – Analyzer + Academy + Radar gotovi. Sljedeće: Workspace, Contract Watch (issue #9).
+> Status: FAZA 6 (4/5) – ostao samo Nabava Workspace (issue #9).
 
 [🚀 Brzi start](#-brzi-start) · [📖 Dokumentacija](#-dokumentacija) · [🗺️ Roadmap](./ROADMAP.md) · [📊 Status](./PROJECT_STATUS.md) · [⚖️ Pravna osnova](./docs/legal-and-data-rights.md)
 
@@ -162,7 +162,7 @@ Prva verzija je **read-only** — nijedan alat ne mijenja podatke.
 | 🗂️ **Nabava Workspace** | Projekti · dokumenti · evaluacija · ugovori · aneksi | 📋 Faza 6 |
 | 📡 **Tender Radar** | CPV · predmet · lokacija · vrijednost · rokovi · obavijesti | ✅ gotov (v0.9.0) |
 | ⚖️ **DKOM Analyzer** | Obrasci iz prakse + poređenje s propisima i sudskom praksom | ✅ gotov (v0.7.0) |
-| 📜 **Contract Watch** | Rokovi · izmjene · garancije · rizici · izvještaji | 📋 Faza 6 |
+| 📜 **Contract Watch** | Rokovi · izmjene · garancije · rizici · izvještaji | ✅ gotov (v0.10.0) |
 | 🎓 **Nabava Academy** | Vodiči · lekcije · testovi · simulacije postupaka | ✅ gotov (v0.8.0) |
 
 ```mermaid

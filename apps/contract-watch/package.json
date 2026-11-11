@@ -1,0 +1,8 @@
+{
+  "name": "contract-watch",
+  "version": "0.9.0",
+  "private": true,
+  "type": "module",
+  "description": "Contract Watch – praćenje izvršenja ugovora",
+  "scripts": { "test": "node --test watch.test.mjs" }
+}

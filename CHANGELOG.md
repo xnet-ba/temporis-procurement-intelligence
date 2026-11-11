@@ -2,6 +2,12 @@
 
 Format: Keep a Changelog. Datumi u UTC.
 
+## [0.10.0] – 2026-11-11
+### Dodano (FAZA 6 – 4/5: Contract Watch)
+- `apps/contract-watch/`: checkUgovor + portfolio + digest, 2 ogledna ugovora, `TPI_CONTRACTS` za vlastite podatke
+- Perzistencija odlučena: lokalne JSON datoteke (providno, bez novih zavisnosti)
+- 4 testa (kritično/pažnja/uredno/portfolio)
+
 ## [0.9.0] – 2026-11-11
 ### Dodano (FAZA 6 – 3/5: Tender Radar)
 - `apps/tender-radar/`: 4 ogledne objave, profil-matching (CPV grupa +2, ostalo +1), isključenje po roku, digest
